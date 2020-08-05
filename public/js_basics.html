@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JS Basics</title>
+    </head>
+
+    <body>
+        <script>
+             // var , let, const
+             // var - variables declared with var are function scoped
+             // let - variables declared with let are block-scoped
+             
+             //ES6
+             for(let i=0;i<5;i++){
+                 console.log(i)  // 0,1,2,3,4
+             }
+             console.log(i)  // Error
+
+             //ES5
+             for(var i=0;i<5;i++){
+                console.log(i)  // 0,1,2,3,4
+             }
+             console.log(i)     // 5
+
+             let letters=["a","b","c","d","e"]
+             for(let letter of letters){
+                 console.log(letter)
+             }
+        </script>
+    </body>
+</html>

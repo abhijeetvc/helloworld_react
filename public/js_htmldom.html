@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My App</title>
+    </head>
+
+    <body>
+        <!-- <p id="pid">This is a paragraph</p>
+        <p>This is another paragraph</p>
+        <script>
+            document.write(document.documentElement.getAttribute("lang"))
+           // document.body.style.background="yellow"
+            document.write("<br>")
+            document.write(document.head.firstElementChild.nodeName)
+            document.write("<br>")
+            var ele=document.getElementById("pid")
+            ele.style.background="yellow" -->
+
+        <p class="test">This is a paragraph</p>
+        <div class="test">This is another paragraph</div>
+        <p>This is again another paragraph</p>
+        <script>
+           var ele=document.getElementsByClassName("test")
+
+           document.write("total elements found: "+ele.length)
+           ele[ele.length-1].style.fontStyle="italic"
+
+           var ele1=document.getElementsByTagName("p")
+           for(var elem in ele1){
+               ele1[elem].style.background="yellow"
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>JS For Loops</title>
+    </head>
+
+    <body>
+        <script>
+            // var person={
+            //     "name":"John",
+            //     "age":30,
+            //     "city":"Mumbai"
+            // }
+
+            // for(var p in person){
+            //     document.write(p+" : "+person[p]+"<br>")
+            // }
+
+            let letters=["a","b","c","d","e"]
+
+            // for(let letter of letters){
+            //     document.write(letter+"<br>")
+            // }
+
+            // let greet="Hello Javascript"
+
+            // for(let character of greet){
+            //     document.write(character+"<br>")
+            // }
+
+            //ES6 Style
+            // function sayHello(name='John'){
+            //     return `Hello ${name}`
+            // }
+            // document.write(sayHello('Peter'))
+
+            var total=function(a,b){
+                return a+b
+            }   
+            
+            // document.write(total(20,30)+"<br>") 
+
+            // var total=(a,b)=>a+b   //Pass multiple parameters to arrow function
+            // document.write(total(40,50)+"<br>")
+
+            // var greet=name=>document.write("Hello "+name)  //Passing single value/para to function
+            // greet("Peter")
+
+            var check=age=>{
+                if(age>18){
+                    alert("Adult")
+                }else{
+                    alert("Child")
+                }
+            }
+         //   check(17)
+
+            var check1=()=>alert("No parameter function")
+            check1()
+        </script>
+    </body>
+</html>

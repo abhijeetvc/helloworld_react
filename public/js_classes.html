@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>JS Classes</title>
+    </head>
+
+    <body>
+        <script>
+            class Reactangle{
+                constructor(length,width){
+                    this.length=length
+                    this.width=width
+                }
+
+                calculateArea(){
+                    return this.length*this.width
+                }
+            }
+
+            class Square extends Reactangle{
+                constructor(length){
+                    super(length,length)
+                }
+
+                calculatePerimeter(){
+                    return 2*(this.length+this.width)
+                }
+            }
+
+            let reactangle=new Reactangle(5,10)
+            document.write(reactangle.calculateArea()+"<br>")
+
+            let square=new Square(5)
+            document.write(square.calculateArea(5)+"<br>")
+
+            document.write(square.calculatePerimeter())
+        </script>
+    </body>
+</html>
